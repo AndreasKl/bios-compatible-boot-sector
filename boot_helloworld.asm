@@ -10,10 +10,10 @@ jmp $
 %include "print_string.asm"
 
 HELLO_MSG:
-  db 'Hello, World!',13, 10, 0
+  db 'Hello, World!', 13, 10, 0
   
 GOODBYE_MSG:
-  db 'Goodbye!',13, 10, 0
+  db 'Goodbye!', 13, 10, 0
 
 times 510-($-$$) db 0
 dw 0xaa55
